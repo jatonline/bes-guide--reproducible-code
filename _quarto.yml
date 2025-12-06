@@ -4,6 +4,7 @@ project:
 
 execute:
   eval: false
+  freeze: auto
 
 book:
   title: "BES Guide to Reproducible Code"
