@@ -1,0 +1,42 @@
+project:
+  type: book
+  output-dir: _book
+
+execute:
+  eval: false
+
+book:
+  title: "BES Guide to Reproducible Code"
+  reader-mode: true
+  
+  page-footer:
+    left: |
+      BES Guide to Reproducible Code (2nd edition) was edited by Natalie Cooper and Pen-Yuan Hsing.
+    right: |
+      This book was built with <a href="https://quarto.org/">Quarto</a>.
+  cover-image: cover.jpg
+  favicon: cover.jpg
+  site-url: https://github.com/BES-Guide/reproducible-code
+  repo-url: https://github.com/BES-Guide/reproducible-code
+  repo-branch: main
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - organising-projects.qmd
+    - programming.qmd
+    - code-review.qmd
+    - reproducible-notebooks.qmd
+    - version-control.qmd
+    - publishing-and-archiving.qmd
+    - further-resources.qmd
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    respect-user-color-scheme: true
+    code-link: true
+    author-meta: "Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund"
+    callout-appearance: simple
+    number-depth: 2

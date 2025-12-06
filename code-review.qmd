@@ -1,0 +1,91 @@
+# Code review {#sec-code-review}
+
+Code review is crucial for research reliability, transparency and reproducibility. It improves research workflow, helps identify errors, improve clarity and enhance accessibility[^14],[^15]. For code that accompanies a research paper, this means verifying that it matches the method's description and produces the same results as reported. For standalone code or software projects developed independently of a publication, review should ensure the code aligns with its stated purpose and functions.
+
+## How to conduct code review
+
+When reviewing code, it is important to check if it runs without errors, is well-documented and follows best programming practice to remain reproducible in the long term and can be reused by other researchers. **The** **4Rs of Code Review** provide helpful guidance, particularly for code accompanying publications, but the same principles apply to standalone code or software. Additionally, the **FAIR** principles[^16] support maintaining quality, transparency and reusability, which are essential for long-term accessibility and reliability of code (see @sec-introduction).
+
+Remember, code review is also an opportunity to support learning and foster a positive, collaborative culture. To make your code review as helpful as possible (i) start with high-level feedback before diving into the details; (ii) give code examples to illustrate suggestions; (iii) keep comments open, respectful and directed at the code, not the author; and (iv) tie suggestions to principles like readability, maintainability, or performance rather than personal preference wherever possible.
+
+### The 4Rs of code review
+
+1. **Reported: Does the code match what is described in the manuscript/description?**
+
+    For code linked to a publication, this means that the code matches the methodology in the manuscript, ensuring it performs as stated. Any discrepancies, such as differing model specifications, must beidentified and all relevant packages and version numbers should be specified for reproducibility. For standalone code, this means ensuring that the code aligns with the software stated purpose and functions as described.
+
+2. **Run: Does the code execute successfully?**
+
+Even if the code aligns with the methodology, it must be executable without errors. Missing dependencies, typos, or lack of data can prevent execution. Providing data snippets or simulated data when the original data is not available is recommended.
+
+3. **Reliable: Is the code producing accurate results?**
+
+Code can run without errors yet still produce incorrect, reproducible results due to conceptual or programming mistakes. Thorough checks of intermediate outputs and using testing tools to catch hidden errors, especially as code complexity increases, are necessary to ensure code reliability (see @sec-defensive-programming).
+
+4. **Reproducible: Do rerun results match previous results?**
+
+Whether reviewing code linked to a paper or standalone code, the goal is to ensure that rerunning the code produces consistent results. Some variation is expected with stochastic methods, but numerical and statistical conclusions should remain stable within a reasonable tolerance. Reproducibility is assessed by comparing results using metrics like confidence interval overlap, direction and significance of effects or percentage error. Minor differences that don't change conclusions are acceptable, but reproduced results should closely match reported outputs to ensure reliability.
+
+While the **4Rs** ensure that the code is functional and reliable within a research context, the **FAIR** principles help make it Findable, Accessible, Interoperable and Reusable (see @sec-introduction) ensuring high technical quality and enables reuse by both humans and machines. Without compliance with these principles, the code may not be easily found and accessed by reviewers or reused by other researchers.
+
+## Ensuring the FAIR principles 
+
+**Documentation** (**Reusable, Accessible;** see @sec-publishing-and-archiving)
+
+- Does the code include a `README` with clear installation and usage instructions?
+- Is there a `CITATION.cff` or equivalent file to facilitate proper citation?
+
+**Version control** (**Findable, Accessible, Reusable;** see @sec-version-control)
+
+- Is the code stored in a publicly accessible repository like GitHub, GitLab, or Codeberg?
+- Does the repository include a **CONTRIBUTING.md** file with guidelines for contributors?
+- Are issues and discussions actively managed via an issue tracker (e.g., GitHub Issues, GitLab Issues)?
+
+**License** (**Accessible, Reusable;** see @sec-publishing-and-archiving)
+
+- Does the code have an appropriate license for reuse? Use [choosealicense.com](https://choosealicense.com/) to choose one.
+- Is the license clearly stated in a `LICENSE` file in the repository?
+
+**Archiving** (**Findable, Accessible;** see @sec-publishing-and-archiving)
+
+- Has the code been assigned a DOI for long-term accessibility? Platforms like Zenodo, FigShare or Software Heritage provide DOI assignments.
+
+**Interoperability and reusability** (**Interoperable, Reusable**)
+
+- Does the software use open standards and widely accepted formats to ensure compatibility?
+- Are there clear instructions for installing dependencies and running the code?
+- Does the project include an application programming interface (API) or guidelines for extending the code?
+
+**Testing** (**Reusable, Interoperable;** see @sec-programming) - *when appropriate*
+
+- Does the repository include tests?
+
+**Community registry** (**Findable, Accessible, Reusable**) - *when appropriate*
+
+- Is the software published in a community repository? Common registries:
+  - R: CRAN, rOpenSci, Bioconductor
+  - Python: PyPI, Anaconda Cloud Gallery
+
+## When to conduct code review
+
+Peer-reviewed code fosters organised workflows, enhancing research transparency and reusability. It also helps train students and early-career researchers (and senior researchers too!) in best programming practices. Code review can take place before publication, during formal review and after publication when reusing someone else's code and identifying errors. It can also take place as a routine part of developing code, even if the end goal is not a publication.
+
+- **Pre-submission peer review**
+
+    Pre-submission code review should become a standard practice for each research team. It can be effectively implemented by establishing a code review group within research teams and using platforms like GitHub for collaboration and discussion.
+
+- **Peer review during submission**
+
+    Many journals (including the BES journal *Methods in Ecology and Evolution*) now require code to be submitted alongside data for peer review[^17]. Additionally, some journals in ecology and evolution, such as *The American Naturalist*, have data editors who specifically review the supporting code and data. Providing access to code during peer review has multiple benefits: it allows reviewers to verify that the code produces the reported results and ensures statistical analyses align with the study's design. To keep code review anonymous, authors can upload their code to platforms like Figshare, the Open Science Framework (OSF), or Zenodo and provide an anonymised link to reviewers.
+
+- **Post-publication peer review**
+
+    After a study is published, researchers reusing the code may find errors. If they do, they should reach out to the original authors. Many journals encourage authors to correct mistakes, often facilitated through project issues or direct communication. This process helps prevent the spread of errors and enhances the reliability of published findings.
+
+[^14]: Fernández-Juricic, E. (2021). Why sharing data and code during peer review can enhance behavioral ecology research. Behavioral Ecology and Sociobiology, 75 (7), 103. [https://doi.org/10.1007/s00265-021-03036-x](https://doi.org/10.1007/s00265-021-03036-x)
+
+[^15]: Ivimey‐Cook, E.R., et al. (2023). Implementing code review in the scientific workflow: Insights from ecology and evolutionary biology. Journal of Evolutionary Biology, 36 (10), 1347-1356. [https://doi.org/10.1111/jeb.14230](https://doi.org/10.1111/jeb.14230)
+
+[^16]: Barker, M., et al. (2022). Introducing the FAIR Principles for research software. Scientific Data, 9 (1), 622. [https://doi.org/10.1038/s41597-022-01710-x](https://doi.org/10.1038/s41597-022-01710-x)
+
+[^17]: [https://doi.org/10.32942/X2492Q](https://doi.org/10.32942/X2492Q) accessed 15th August 2025

@@ -1,0 +1,67 @@
+# Further resources {#sec-further-resources}
+
+## Code Review
+
+Software Quality Checklist:
+[https://github.com/eurise-network/technical-reference/blob/v0.1/quality/software-checklist.rst](https://github.com/eurise-network/technical-reference/blob/v0.1/quality/software-checklist.rst)
+
+Self-assessment for FAIR research software:
+[https://fairsoftwarechecklist.net/v0.2/](https://fairsoftwarechecklist.net/v0.2/)
+
+Software Quality Guidelines:
+[https://github.com/CLARIAH/software-quality-guidelines/blob/v1.0/softwareguidelines.pdf](https://github.com/CLARIAH/software-quality-guidelines/blob/v1.0/softwareguidelines.pdf)
+
+## Reproducible Notebooks
+
+Tutorial: Hello, Quarto:
+[https://quarto.org/docs/get-started/hello/vscode.html](https://quarto.org/docs/get-started/hello/vscode.html)
+
+The Ultimate Markdown Cheat Sheet for Technical Writers and
+Documentation Engineers:
+[https://medium.com/@kevinteaches/the-ultimate-markdown-cheat-sheet-for-technical-writers-541dbb9fd53c](https://medium.com/@kevinteaches/the-ultimate-markdown-cheat-sheet-for-technical-writers-541dbb9fd53c)
+
+## Version Control
+
+Happy Git and GitHub for the useR:
+[https://happygitwithr.com/](https://happygitwithr.com/)
+
+RStudio User Guide Release 2025.05.1: Version control:
+[https://docs.posit.co/ide/user/ide/guide/tools/version-control.html](https://docs.posit.co/ide/user/ide/guide/tools/version-control.html)
+
+Version control using RStudio:
+[https://nceas.github.io/oss-lessons/version-control/4-getting-started-with-git-in-RStudio.html](https://nceas.github.io/oss-lessons/version-control/4-getting-started-with-git-in-RStudio.html)
+
+Reproducible research with R, RStudio and GitLab: Version control:
+[https://matthieu-bruneaux.gitlab.io/guide-r-rstudio-git-gitlab/020-intro-version-control.html](https://matthieu-bruneaux.gitlab.io/guide-r-rstudio-git-gitlab/020-intro-version-control.html)
+
+Visual Studio IDE: About Git in Visual Studio:
+[https://learn.microsoft.com/en-us/visualstudio/version-control/git-with-visual-studio?view=vs-2022](https://learn.microsoft.com/en-us/visualstudio/version-control/git-with-visual-studio?view=vs-2022)
+
+## Publishing and Archiving
+
+Github Docs: Referencing and citing content:
+[https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content)
+
+How To Make Your GitHub Code Citable With Zenodo: 
+https://www.youtube.com/watch?v=1pI4QU-7c98
+
+How to connect Figshare with your GitHub account:
+[https://help.figshare.com/article/how-to-connect-figshare-with-your-github-account](https://help.figshare.com/article/how-to-connect-figshare-with-your-github-account)
+
+OSF Support: Connect GitHub to a project:
+[https://help.osf.io/article/211-connect-github-to-a-project](https://help.osf.io/article/211-connect-github-to-a-project)
+
+Dataverse Uploader Action:
+[https://github.com/marketplace/actions/dataverse-uploader-action](https://github.com/marketplace/actions/dataverse-uploader-action)
+
+Intro to Zenodo: Advancing Open Science (Esther Plomp):
+[https://www.youtube.com/watch?v=eChOfh8t04k](https://www.youtube.com/watch?v=eChOfh8t04k)
+
+How to create a CITATION.cff using cffinit:
+[https://www.youtube.com/watch?v=zcgLIT5Qd4M](https://www.youtube.com/watch?v=zcgLIT5Qd4M)
+
+How to update an existing CITATION.cff file using cffinit:
+[https://www.youtube.com/watch?v=6Ik1onYbO3A](https://www.youtube.com/watch?v=6Ik1onYbO3A)
+
+TADA! Simple guidelines to improve code sharing:
+[https://ecoevorxiv.org/repository/view/9806/](https://ecoevorxiv.org/repository/view/9806/)

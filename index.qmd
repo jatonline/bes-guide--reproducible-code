@@ -1,0 +1,48 @@
+# Welcome {.unnumbered}
+
+This is the [Quarto](https://quarto.org/) website for the 2nd edition of British Ecological Society's "Guide to Reproducible Code". A print version of this guide has also been [published as a PDF file on Zenodo](https://doi.org/10.5281/zenodo.16421732). 
+
+Assuming you already know the basics of programming (such as in the languages R or Python), this guide will show you how to publish the code you write so that it is reprodicible and FAIR for others (and your future self!).
+
+## About this Guide
+
+Copyright © British Ecological Society (BES) and authors, 2025
+
+This Guide is published under the [Creative Commons Attribution-ShareAlike 4.0](https://creativecommons.org/licenses/by-sa/4.0/) International license (CC BY-SA 4.0).
+
+![](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg)
+
+Part of the [**BES Better Science Guides**](https://www.britishecologicalsociety.org/content/better-science-guides/).
+
+**British Ecological Society**
+[https://www.britishecologicalsociety.org](https://www.britishecologicalsociety.org)
+
+### Editors
+
+Natalie Cooper, Natural History Museum, UK.
+
+Pen-Yuan Hsing, University of Bristol, UK.
+
+### Contributors (2025)
+
+Batool Almarzouq, University of Liverpool.
+
+Selina Baldauf, Freie Universität Berlin, Germany.
+
+Nilanjan Chatterjee, Senckenberg Biodiversity and Climate Research Centre, Germany.
+
+Esther Plomp, University of Aruba, Aruba.
+
+Tanya Strydom, University of Sheffield, UK.
+
+Elina Takola, Helmholtz-Zentrum für Umweltforschung, Germany.
+
+Zuzanna Zagrodzka, University of Sheffield and University of Manchester, UK.
+
+### Original contributors (2017)
+
+Mike Croucher, Laura Graham, Tamora James, Anna Krystalli, François Michonneau.
+
+### Acknowledgements
+
+This booklet was coordinated by Amelia Macho and Kate Harrison of the British Ecological Society. We thank Edward R. Ivimey-Cook, Antonio J. Pérez-Luque, Luis D. Verde Arregoitia, Nemo Andrea, Carlos Martinez Ortiz, Bryan M Gee. Daniel Padfield, Emma Dunne, Michael D Catchen, Jiangyue Wang, Gbadamassi Gouvide Olawole Dossa for reviewing the second edition of this guide.

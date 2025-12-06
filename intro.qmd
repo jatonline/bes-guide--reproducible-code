@@ -1,0 +1,89 @@
+# Introduction {#sec-introduction}
+
+The way we do science is changing. Datasets are getting bigger, analyses are getting more complex and governments, funding agencies and the scientific method itself demand more transparency and accountability in research. One way to deal with these changes is to make our research more reproducible, especially our code. Here, reproducibility means being able to run the same analysis (e.g. code) with the same data and get the same results. Although many of us now write code to perform our analyses, it is often not very reproducible. We have all come back to a piece of work we have not looked at for a while and had no idea what our code was doing or which of the many "`final_analysis`" scripts truly was the final analysis! Unfortunately, the number of tools for reproducibility and all the jargon can leave new users feeling overwhelmed, with no idea how to start making their code more reproducible. So, we have put together this guide to help. This **Guide to Reproducible Code** covers the basic tools and information you need to start making your code more reproducible. Most examples are in R and Python, with a few in Julia, but the tips should apply to any programming language. Doing everything described here all at once can be hard, especially if this is your first attempt at making your code more reproducible. But do not be discouraged. Instead, challenge yourself to add just one more aspect to each of your projects. Remember, partially reproducible research is much better than completely non-reproducible research.
+
+## Open science and FAIR research software
+
+Writing and sharing reproducible code is a part of a wider set of good practices referred to as open science. Open science practices ensure that the processes and outputs of science are shared so that anyone can use, study, change or build upon them and continue to share what they've learned with others. Just as we build upon past knowledge to conduct our research, we have a responsibility to the scientific process to share what we learn with those who come after us. These ideals have been formalised in the [UNESCO Recommendation on Open Science](https://www.unesco.org/en/open-science/about), ratified in 2021.
+
+To help with this, there is a set of principles called **FAIR** (**F**indable, **A**ccessible, **I**nteroperable and **R**eusable) for making research outputs, such as software code, more transparent and reproducible. The FAIR principles for Research Software[^1] state that: 
+
+1. Software and its associated metadata is **Findable** for both humans and machines. Software should have a persistent, long-lasting reference such as a digital object identifier (DOI). Different versions of the software should be assigned distinct identifiers.
+2. Software and its metadata is **Accessible** via an access protocol. Accessible is not always the same as "open": the software can be shared under restricted access with a clear protocol in place that could provide access to it. The metadata should always be accessible, even when the software is no longer available.
+3. Software is **Interoperable** with other software by exchanging data and/or metadata and/or through interaction via application programming interfaces (APIs), ideally using domain-relevant community standards. Interoperable software is shared in open formats that can be opened without proprietary software. Software should also include references to other research objects.
+4. Software is both usable (can be executed) and **Reusable** (can be understood, modified, built upon, or incorporated into other software). For this, the software is well documented (using for example a `README`) and assigned a license.
+
+It is important to think about the FAIR principles throughout your project. By applying what you learn in this guide, you will make your code not only more open and reproducible, but more FAIR as well! You can also check out the [five recommendations for FAIR software](https://fair-software.nl/), or use [Howfairis](https://www.howfairis.com/) to assess and improve research software's adherence to the FAIR principles.
+
+::: {.callout-tip}
+### Invisible labour
+
+Scientific research is often a team effort, but the specialised labour behind computer programming (and good data management) is often invisible, uncosted and unpaid. We stress the importance of appreciating the scale of work needed to write, manage, archive and share reproducible code and the need to plan and budget for this labour when developing research projects. There is now increasing recognition of Research Software Engineering (RSE) in academic research. For more information, check out the work by the [Software Sustainability Institute](https://www.software.ac.uk/about/research-software-engineers) and the [Society of Research Software Engineering](https://society-rse.org/about/).
+:::
+
+::: {.callout-warning}
+### Generative "AI" tools and programming
+
+Generative "AI" tools are purported to help generate, explain, comment, translate, debug, optimise and test code[^2]. Any use of generative "AI" should be **transparent, accountable and acknowledged**. Check the editorial policies of journals before submission to ensure you are using the most up-to-date guidance (e.g. the BES [Editorial Policies](https://besjournals.onlinelibrary.wiley.com/hub/editorial-policies)).
+
+We avoid directly recommending these tools in this guide for the following reasons:
+
+1. The appearance of intelligence of these tools risks causing "illusions of understanding"[^3].
+2. They reduce reproducibility. Large language models (LLMs) like ChatGPT are proprietary black boxes designed with a certain degree of inbuilt randomness, which makes it impossible to reproduce their outputs.
+3. They can have massive environmental costs (including energy and water consumption).
+4. The obscurity of their source and function can lead to the exploitation of hidden workers, deepening the global divide and displacing (not replacing) labour and preventing proper attribution of credit.
+:::
+
+## A simple reproducible project workflow
+
+### Before you start
+
+* Think about the FAIR principles. Where will you publish/archive the code? How can you ensure your work is FAIR?
+* Choose a project folder structure
+* Choose a file naming system
+* Choose a coding style and naming conventions
+* Install and set up your version control software (e.g. Git)
+* OPTIONAL Set up an online version control account
+
+### First steps
+
+* Create a project folder and subfolders
+* Add a `README`
+* Add a `LICENSE`
+* Create a version control repository for the project
+* OPTIONAL Set up an online version control repository for your project
+* OPTIONAL Create a reproducible environment for your project
+* OPTIONAL Create Quarto notebooks for each set of analyses
+
+### Project workflow
+
+1. Write the code
+2. Comment the code
+3. Commit the code to version control
+4. Sync with your remote version control repository
+5. Repeat
+
+### Code review
+
+Follow the **4Rs of code review** to make sure your code is reliably: 
+
+* Reported
+* Run
+* Reliable
+* Reproducible
+
+### Preparing for publication/archiving
+
+* Record the versions of software and packages you used (if you didn’t already set up a reproducible environment)
+* Update the `README` to include the full project workflow
+* Check that your documentation makes sense and add more if needed
+* Make any private repositories public
+* Archive your code to get a DOI
+* Don’t forget to archive and document your data too! See the BES Better Science [Guide on Data Management](https://www.britishecologicalsociety.org/content/better-science-guides/)
+* Ensure that the whole project is FAIR
+
+[^1]: Chue Hong, N. P., et al. (2022). FAIR Principles for Research Software (FAIR4RS Principles) (1.0). Zenodo. [https://doi.org/10.15497/RDA00068](https://doi.org/10.15497/RDA00068)
+
+[^2]: Cooper, N., et al. (2024). Harnessing large language models for coding, teaching and inclusion to empower research in ecology and evolution. Methods in Ecology and Evolution, 15, 1757--1763. [https://doi.org/10.1111/2041-210X.14325](https://doi.org/10.1111/2041-210X.14325)
+
+[^3]: Messeri, L., et al. (2024). Artificial intelligence and illusions of understanding in scientific research. Nature, 627, 49--58. [https://doi.org/10.1038/s41586-024-07146-0](https://doi.org/10.1038/s41586-024-07146-0)

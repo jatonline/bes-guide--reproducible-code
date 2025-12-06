@@ -2,7 +2,9 @@
 
 [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
-This `README` is currently a placeholder. The Quarto notebook version of the guide will be published here. 
+This is the [Quarto](https://quarto.org/) version of the 2nd edition of British Ecological Society's "Guide to Reproducible Code". A print version of this guide has also been [published as a PDF file on Zenodo](https://doi.org/10.5281/zenodo.16421732). 
+
+Assuming you already know the basics of programming (such as in the languages R or Python), this guide will show you how to publish the code you write so that it is reprodicible and FAIR for others (and your future self!).
 
 ## License
 
