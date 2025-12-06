@@ -4,9 +4,9 @@ cff-version: 1.2.0
 title: Guide to Reproducible Code
 message: >-
   If you use this software, please cite it using the
-  metadata from this file.
+  metadata from this file. Note that Natalie Cooper and Pen-Yuan Hsing are the editors of this guide but are listed along with the authors because of limitations to the CITATION.cff format. The publisher of this guide is the British Ecological Society.
 type: book
-editors:
+authors: 
   - given-names: Natalie
     family-names: Cooper
     orcid: 'https://orcid.org/0000-0003-4919-8655'
@@ -15,7 +15,6 @@ editors:
     family-names: Hsing
     orcid: 'https://orcid.org/0000-0002-5394-879X'
     affiliation: 'University of Bristol, United Kingdom'
-authors: 
   - family-names: Almarzouq
     given-names: Batool
     orcid: 'https://orcid.org/0000-0002-3905-2751'
@@ -55,7 +54,5 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.16421732
     description: PDF of print version
-publisher:
-  name: 'British Ecological Society'
 repository-code: 'https://github.com/BES-Guide/reproducible-code'
 license: CC-BY-SA-4.0
